@@ -7,7 +7,7 @@ const AddItem=({newItem,setNewItem,handleSubmit})=>{
             <input 
                 ref={inputRef}
                 type="text" 
-                placeholder="add Items" 
+                placeholder="Add Items" 
                 id="addItem" 
                 required 
                 value={newItem}
