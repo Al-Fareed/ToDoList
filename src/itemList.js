@@ -1,4 +1,4 @@
-  import LineItems from './LineItems';
+import LineItems from './LineItems';
 const ItemList=({items,handleCheck,handleDelete})=>{
     return(
         <ul>

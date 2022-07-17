@@ -65,7 +65,7 @@ ul {
 }
 
 ul li::before {
-  /* content: "\200B"; */
+  content: "\200B";
 }
 
 .item {
