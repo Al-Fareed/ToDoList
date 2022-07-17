@@ -2,7 +2,7 @@
   "items": [
     {
       "id": 1,
-      "checked": false,
+      "checked": true,
       "item": "Pizza"
     },
     {
@@ -16,9 +16,9 @@
       "item": "Potato"
     },
     {
-      "id": 5,
+      "id": 6,
       "checked": false,
-      "item": "Kaccha Badam"
+      "item": "Almond"
     }
   ]
 }

@@ -53,7 +53,7 @@ function App() {
   const handleCheck=async(id)=>{
     const listItems=items.map((item)=>item.id===id ? {...item,checked:!(item.checked)}:item);
     setItems(listItems);  
-    const myItem=listItems.filter(item=>item.id==id);
+    const myItem=listItems.filter(item=>item.id===id);
     const updateOptions={
       method:'PATCH',
       headers:{
@@ -83,7 +83,7 @@ function App() {
   }
   return (
     <div className="App">
-     <Header title="Groceries List"></Header>
+     <Header title="To-Do List"></Header>
      <AddItem
      newItem={newItem}
      setNewItem={setNewItem}
