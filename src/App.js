@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react';
 import apiRequest from './apiRequest';
 
 function App() {
-  const API_URL="http://localhost:3500/items";
+  const API_URL="http://localhost:3000/items";
   const [items,setItems]=useState([]);
   const [newItem,setNewItem]=useState('');
   const [search,setSearch]=useState('');
@@ -17,7 +17,7 @@ function App() {
     const fetchItems = async ()=>{
      try{
       const response =await fetch(API_URL);
-      if(!response.ok)throw Error('Did not recieve data');
+      if(!response.ok)throw Error('Did not receive data');
       const listItems =await response.json();
       setItems(listItems);
       setFetchError(null);
